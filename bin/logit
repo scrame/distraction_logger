@@ -5,4 +5,4 @@ then
     export DISTRACTION_ROOT=/src/booyah/distraction_logger
 fi
 
-echo "`date +'%s'` $1" >> data/distraction.log
+echo "`date +'%s'` $*" >> $DISTRACTION_ROOT/data/distraction.log
