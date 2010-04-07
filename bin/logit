@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [-z $DISTRACTION_ROOT ]
+then
+    export DISTRACTION_ROOT=/src/booyah/distraction_logger
+fi
+
+echo "`date +'%s'` $1" >> data/distraction.log
+
