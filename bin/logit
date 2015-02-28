@@ -1,8 +1,8 @@
 #!/bin/sh
 
-if [[ -z $DISTRACTION_ROOT ]]
+if [[ -z $DISTRACTION_RC ]]
 then
-    export DISTRACTION_ROOT=/src/booyah/distraction_logger
+    export DISTRACTION_RC=$HOME/.distraction.log
 fi
 
-echo "`date +'%s'` $*" >> $DISTRACTION_ROOT/data/distraction.log
+echo "`date +'%s'` $*" >> $DISTRACTION_RC
